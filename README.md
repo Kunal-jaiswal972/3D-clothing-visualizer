@@ -1,27 +1,70 @@
-# Build and Deploy an AI-Powered 3D Website Using React | 2023 Three JS Course Tutorial for Beginners
-![3D Website](https://i.ibb.co/Krk39Cf/Thumbnali.png)
+# Product 3D AI
 
-## Introduction
-Many large corporations already use 3D graphics to showcase their products. Learn how to build your own ThreeJS 3D product website and infuse it with the power of artificial intelligence! 
+![product3d_1](https://user-images.githubusercontent.com/81036521/230707834-2ed0b108-ac44-4d33-982f-64904a14fbf7.JPG)
+#
+
+The 3D product website is a comprehensive platform that showcases customizable 3D t-shirts with the ability to alter their logos 
+and textures. Moreover, the platform offers cutting-edge AI technology that generates logos and textures tailored to your specific 
+requirements, based on prompts provided by the user. The website is Developed using React, a popular JavaScript library, the 
+platform boasts the integration of Three.js, a powerful 3D modeling library. Additionally, ChatGPT's DallE image generation model 
+has been employed to provide users with advanced AI-generated image customization capabilities.
+
+The 3D product website also provides users with an intuitive and user-friendly interface that facilitates easy navigation and smooth 
+interaction with the platform. The website is optimized for a seamless user experience and features a responsive design that ensures 
+compatibility across all devices.
+#
+
+## Installation for developement
+
+1. Client (FrontEnd)
+        
+    a. Go into the client folder by running the command :
+        
+        cd client
+    
+    b. Install the packages, to install the packages run the command :
+    
+        npm install
+     
+    c. Change the link in the code in folder : 
+    
+        Folder Location : client > src > pages > Customizer.jsx
+        
+        Code change : In handleSubmit function change the link from
+        
+        https://product-3d-ai.onrender.com/api/v1/dalle to http://localhost:8080/ 
+        
+        or else the AI model with not work on your local server.
+     
+     d. Now Run the client (frontend), To run the frontend run the command :
+     
+        npm run dev
+      
+     e. Your client (frontend) is ready you can open your frontend from the given link in the terminal. 🎉
+    
+2. Server (BackEnd)
+
+    a. Go into the server folder by running the command :
+        
+        cd server
+    
+    b. Install the packages, to install the packages run the command :
+    
+        npm install
+        
+    c. Create an .env file in the server folder, you can get the api key from the [OpenAi Official website](https://platform.openai.com/account/api-keys),
+    and add the API key in the file, :
+    
+        OPENAI_API_KEY = YOUR_OPENAI_API_KEY
+        
+    d. Now Run the server (Backend), To run the frontend run the command :
+     
+        npm start
+      
+    e. Your server (Backend) is ready you can open your frontend from the given link in the terminal. 🎉
  
-In this course, you'll learn the following:
-- ThreeJS - a powerful 3D graphics library for rendering and animating the 3D model
-- React Three Fiber - a popular library for creating 3D graphics with ThreeJS in React
-- TailwindCSS - a popular utility-first CSS styling framework
-- Framer Motion - the most popular library used to bring your React website to life with animations
+3. Congratulation you are all set and got to go. 🤹‍ 
 
-You'll also learn how to:
-- Load, create and customize stunning 3D models and geometries with various lights, as well as understand the 3D world with a camera and positioning of an object in space.
-- Make your code reusable and scalable using Higher Order Components (HOCs) and other industry-standard best practices
-- Add custom color and file support.
-- Generate and use images through DALLE AI
-- Download the resulting t-shirt model image
-- Ensure responsiveness across all devices and improve your site's performance
+#
 
-## Want to learn more? Check out Anderson Mancini's Course
-This video covers only a small part of what's included in [Anderson Mancini's Udemy Course](https://www.udemy.com/course/react-three-fiber-configurator/). Go check it out 🔥
-
-
-## Want to land your dream programming job in 3 - 6 months?
-⭐ JSM Masterclass Experience - https://jsmastery.pro/masterclass
-Become a Software Engineer. Guaranteed.
+Have Fun.😉
